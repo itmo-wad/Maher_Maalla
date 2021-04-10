@@ -1,2 +1,1 @@
-# Maher_Maalla
-WAD Tasks
+# Web Application Development Tasks
