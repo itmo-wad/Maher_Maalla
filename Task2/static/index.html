@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>My Gallery</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.row{
+	width:900px;
+	align:center;
+	margin: auto;
+  padding: auto;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center;">Image Gallery</h1>
+
+<div class="row">
+  <div class="column">
+    <img src="images/1.jpg" alt="Snow" onclick="window.open(this.src)" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/2.jpg" alt="Forest" onclick="window.open(this.src)" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/3.jpg" alt="Mountains"onclick="window.open(this.src)" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="images/4.jpg" alt="Mountains" onclick="window.open(this.src)" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="images/5.jpg" alt="Mountains" onclick="window.open(this.src)" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="images/6.jpg" alt="Mountains" onclick="window.open(this.src)" style="width:100%">
+  </div>
+   <div class="column">
+    <img src="images/7.jpg" alt="Mountains" onclick="window.open(this.src)" style="width:100%">
+  </div>
+</div>
+
+</body>
+</html>
