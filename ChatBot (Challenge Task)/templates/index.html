@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <title>My Chat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align:center;">My Chat</h1>
+        <form method="POST" action="">
+            <br />
+            <textarea readonly id="textarea" name="messages">{{dialog}}</textarea>
+            <br />
+            <input type="text" name="message" placeholder="insert your Message...">
+            <input type="submit" value="send" />
+        </form>
+    </div>
