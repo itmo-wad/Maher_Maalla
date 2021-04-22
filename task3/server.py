@@ -43,20 +43,6 @@ def login():
                 if found ==0 :
                     flash('Wrong Username or Password!')
                 return index()    
-        else:
-             username = request.form.get('username')
-             password = request.form.get('password')
-             found = 0
-             for k,v in logins.items():
-                 if username == k :
-                     flash('Username aleady exists!')
-                     session['logged_in'] = False
-                     found = 1
-                     return do_reg()
-             if found == 0 :
-                logins.update( {username : password} )
-                session['logged_in'] = True
-                return index()
    
 @app.route('/static/<image_name>')
 def index2(image_name):
