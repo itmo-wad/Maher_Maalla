@@ -31,7 +31,6 @@ def login():
         return index() 
     
     else:
-        if "email" not in request.form :
                 found=0
                 for k,v in logins.items():
                     if request.form['username'] == k:
