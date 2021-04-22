@@ -1,5 +1,4 @@
 from flask import Flask, render_template,request,send_from_directory,session,flash
-import re
 
 
 app = Flask(__name__)
